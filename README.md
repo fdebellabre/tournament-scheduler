@@ -19,7 +19,7 @@ $ pip install .
 
 # Usage
 
-## From the linux command line
+## From the command line
 
 Either specify the team names
 
