@@ -48,7 +48,7 @@ teams = ['Team ' + str(z+1) for z in range(nteams)]
 games = scheduler.get_best_schedule(teams,nfields,bestfields)
 
 # Field distribution quality
-sg.get_aggregate_data(games)
+scheduler.get_aggregate_data(games)
 
 # Schedule quality
 np.array(scheduler.get_gap_info(games))   # gaps between games (rows are teams)
