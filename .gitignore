@@ -1,0 +1,8 @@
+schedule.csv
+venv
+__pycache__
+scheduler/__pycache
+tournament_scheduler.egg-info
+tournament_scheduler.py.egg-info
+build
+dist
