@@ -13,7 +13,7 @@ $ pip install tournament-scheduler
 ## Manually
 
 ```bash
-$ git clone https://github.com/url && cd tournament-scheduler
+$ git clone https://github.com/fdebellabre/tournament-scheduler && cd tournament-scheduler
 $ pip install .
 ```
 

@@ -6,3 +6,4 @@ tournament_scheduler.egg-info
 tournament_scheduler.py.egg-info
 build
 dist
+.eggs
