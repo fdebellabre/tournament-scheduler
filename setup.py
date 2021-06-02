@@ -19,7 +19,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 
 setup(
     name='tournament-scheduler',
-    version='0.1.0',
+    version='0.1.1',
     description='A command-line tool to generate a tournament schedule',
     license = 'LICENSE.txt',
     packages=find_packages(),

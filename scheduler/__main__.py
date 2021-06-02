@@ -18,10 +18,10 @@ def main(team_names, nteams, nfield, nbest, patience, out):
     if nbest==-1: nbest = nfield
     elif nbest>nfield: raise ValueError('--nbest cannot be higher than --nfield')
     if nfield is None: raise ValueError('Please specify a positive number of fields (--nfield option)')
-    if nbest<=0: raise ValueError('Please specify a positive number of fields (--nfield option)')
+    if nbest<0: raise ValueError('Please specify a positive number of fields (--nfield option)')
+    if nteams>0 and len(team_names)>0 : print("Parameter nteams ignored: team names are already specified")
     elif nteams==0 and len(team_names)==0: raise ValueError('Please specify a positive number of teams (--nteams option)')
-    elif nteams>0 and len(team_names)>0 : print("Parameter nteams not used: team names are already specified")
-
+    
     if len(team_names)>0: nteams = len(team_names)
     else: team_names = ['Team ' + str(z+1) for z in range(nteams)]
 

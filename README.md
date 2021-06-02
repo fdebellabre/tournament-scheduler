@@ -91,7 +91,5 @@ Here is a summary of what this function does:
 1. The maximum gap between any two games of the same team
 2. The maximum gap before+after a game
 3. The average (across teams) maximum gap between any two games of the same team
-4. The average (across teams) maximum gap before+after a game
 
-The python function **get_best_schedule** randomly tries different schedules and returns the best of them, according to the criterion 1, then criterion 2.
-
+The python function **get_best_schedule** randomly tries different schedules and returns the best of them, according to criterion 1, then criterion 2, then criterion 3.
