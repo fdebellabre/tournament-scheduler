@@ -19,7 +19,7 @@ dependency_links = [x.strip().replace('git+', '') for x in all_reqs if 'git+' no
 
 setup(
     name='tournament-scheduler',
-    version='0.1.1',
+    version='0.1.3',
     description='A command-line tool to generate a tournament schedule',
     license = 'LICENSE.txt',
     packages=find_packages(),
@@ -39,9 +39,5 @@ setup(
     classifiers=[
         "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Programming Language :: Python :: 3",
-        "Programming Language :: Python :: 3.6",
-        "Programming Language :: Python :: 3.7",
-        "Programming Language :: Python :: 3.8",
-        "Programming Language :: Python :: 3.9",
     ]
 )

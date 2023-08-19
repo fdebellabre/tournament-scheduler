@@ -93,7 +93,7 @@ def check_list_quality(games, nfield, verbose=False):
     dfhome = games[['home','field']]
     dfaway = games[['away','field']]
     dfaway.columns=['home','field']
-    dfboth = dfhome.append(dfaway).reset_index()
+    dfboth = pd.concat([dfhome, dfaway]).reset_index()
     dfboth = dfboth[np.isnan(dfboth.field)==False].groupby(['home','field']).count().reset_index()
     allcomb = pd.DataFrame(it.product(dfboth.home.unique(), range(nfield)), columns=['home', 'field'])
     dfagg = allcomb.merge(dfboth, how='left', on=['home', 'field'])
